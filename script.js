@@ -18,43 +18,75 @@ const unitContent = {
         projects: [
             {
                 name: '🚗 Blog de Carros Japoneses',
-                description: 'Blog temático sobre autos deportivos japoneses icónicos (Skyline R34, Supra MK4, RX-7) con diseño inspirado en la estética japonesa. Incluye navegación interna, galería de imágenes y enlaces de retorno.',
+                description: 'Blog temático sobre autos deportivos japoneses icónicos (Skyline R34, Supra MK4, RX-7).',
                 path: 'trabajo/index.html'
             },
             {
                 name: '🎨 Roux Academy Art Conference',
-                description: 'Sitio web completo para una conferencia de arte con múltiples secciones: inicio, artistas, agenda, venue y registro. Incluye navegación avanzada, formularios de registro, galerías de artistas y diseño de múltiples columnas.',
+                description: 'Sitio web completo para una conferencia de arte con múltiples secciones.',
                 path: 'proyecto/index.html'
             }
         ]
     },
+
+    // ------------------------------ UNIDAD 2 ------------------------------
     2: {
         title: 'Unidad 2: Desarrollo Avanzado',
         description: 'Aplicación de técnicas avanzadas de CSS, animaciones y diseño responsive.',
         projects: [
-            // Aquí agregarás los proyectos de la unidad 2
-            // {
-            //     name: 'Nombre del Proyecto',
-            //     description: 'Descripción del proyecto',
-            //     path: 'unidad2/proyecto/index.html'
-            // }
+            {
+                name: '🎧 Reproductor',
+                description: 'Proyecto reproductor funcional.',
+                path: 'reproductor/index.html'
+            },
+            {
+                name: '🧠 Memorama',
+                description: 'Juego tipo memorama desarrollado con JavaScript.',
+                path: 'memorama/index.html'
+            },
+            {
+                name: '🛒 Orden de Compra',
+                description: 'Sistema de orden de compra dinámico.',
+                path: 'orden_de_compra/index.html'
+            }
         ]
     },
+
+    // ------------------------------ UNIDAD 3 ------------------------------
     3: {
         title: 'Unidad 3: Proyecto Integrador',
         description: 'Desarrollo de un proyecto integrador que combina todos los conocimientos adquiridos.',
         projects: [
-            // Aquí agregarás los proyectos de la unidad 3
+            {
+                name: '📄 Visualizador de Documentos',
+                description: 'Aplicación para visualizar documentos.',
+                path: 'visualizador_docs/index.html'
+            },
+            {
+                name: '🧮 Calculadora PHP',
+                description: 'Calculadora realizada con PHP.',
+                path: 'calculadora_php/index.html'
+            },
+            {
+                name: '📚 Biblioteca DB',
+                description: 'Sistema de biblioteca conectado a base de datos.',
+                path: 'Biblioteca_db/index.html'
+            },
+            {
+                name: '💬 Chat App',
+                description: 'Aplicación de chat funcional.',
+                path: 'chat_app/index.html'
+            }
         ]
     },
+
     4: {
         title: 'Unidad 4: Implementación Final',
         description: 'Implementación y presentación de resultados del proyecto final con documentación completa.',
-        projects: [
-            // Aquí agregarás los proyectos de la unidad 4
-        ]
+        projects: []
     }
 };
+
 
 // Función para abrir modal de unidad
 function openUnit(unitNumber) {
