@@ -1,0 +1,102 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #e60026; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 5px solid #111;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #00000055;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #e60026;
+}
+
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 10px;
+}
+
+article {
+  background: white;
+  border-left: 8px solid #e60026;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+article h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #e60026;
+  margin-top: 0;
+}
+
+article img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 15px 0;
+  border: 3px solid #111;
+}
+
+.fecha {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 12px;
+  color: #e60026;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.volver:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-top: 4px solid #e60026;
+}
