@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orden de Compra - Suplementos</title>
+  <link rel="stylesheet" href="Compras_diseño.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Orden de Compra - Suplementos</h1>
+
+    <div class="formulario">
+      <label for="producto">Selecciona un suplemento:</label>
+      <select id="producto">
+        <option value="">-- Selecciona --</option>
+        <option value="Proteína Whey" data-precio="800">Proteína Whey - $800</option>
+        <option value="Creatina" data-precio="600">Creatina - $600</option>
+        <option value="Pre-entreno" data-precio="450">Pre-entreno - $450</option>
+        <option value="Multivitamínico" data-precio="300">Multivitamínico - $300</option>
+        <option value="BCAA" data-precio="500">BCAA - $500</option>
+      </select>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1">
+
+      <button onclick="agregarProducto()">Agregar</button>
+    </div>
+
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="resumen">
+      <p>Subtotal: <span id="subtotal">0</span> MXN</p>
+      <p>IVA (16%): <span id="iva">0</span> MXN</p>
+      <p class="total">Total: <span id="total">0</span> MXN</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

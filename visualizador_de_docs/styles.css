@@ -1,0 +1,119 @@
+/* Prube con este link que no bloquea el frame :) : https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf*/
+
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe6f0; 
+    color: #4CAF50; 
+    text-align: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23a8e6cf" opacity="0.3"/><path d="M50 10 C 60 0, 70 0, 80 10 L 70 20 L 60 20 L 50 10 Z" fill="%23ffeb3b" opacity="0.4"/></svg>'); /* Pequeños patrones de fondo */
+    background-size: 80px 80px;
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff; 
+    padding: 30px;
+    border-radius: 20px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border: 5px dashed #FFD700;
+}
+
+h1 {
+    color: #FF69B4;
+    font-size: 2.5em; 
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #ffeb3b; 
+}
+
+.message {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fffacd; 
+    color: #a0522d; 
+    border: 3px solid #FFC0CB; 
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-bottom: 30px;
+    justify-content: center; 
+}
+
+#fileUrl {
+    flex-grow: 1;
+    min-width: 250px; 
+    padding: 12px 15px;
+    border: 3px solid #87CEFA; 
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f0f8ff; 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#viewButton {
+    padding: 12px 25px;
+    background-color: #FF6347; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+#viewButton:hover {
+    background-color: #FF4500; 
+    transform: translateY(-2px); 
+}
+
+#viewButton:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#viewer {
+    width: 100%;
+    height: 650px; 
+    border: 5px solid #98FB98; 
+    border-radius: 15px; 
+    background-color: #e0f0e0; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .controls {
+        flex-direction: column; 
+    }
+    #fileUrl {
+        min-width: unset;
+        width: 100%;
+    }
+    #viewButton {
+        width: 100%;
+    }
+    #viewer {
+        height: 400px; 
+    }
+}

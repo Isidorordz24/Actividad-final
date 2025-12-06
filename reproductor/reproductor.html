@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player">
+    <div id="bg" class="background">
+      <video id="video-bg" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="content">
+      <img id="cover" class="cover" src="imgs/tu boda.png" alt="Portada">
+
+      <div class="song-info">
+        <h2 id="title">Título</h2>
+        <p id="artist">Artista</p>
+      </div>
+
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div class="controls">
+        <i id="prevBtn" class="ri-skip-back-fill small-btn"></i>
+        <i id="playBtn" class="ri-play-circle-fill big-btn"></i>
+        <i id="nextBtn" class="ri-skip-forward-fill small-btn"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

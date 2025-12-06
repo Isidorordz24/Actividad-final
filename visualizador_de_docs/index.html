@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Documentos Web</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+ <!-- Prube con este link que no bloquea el frame :) : https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf -->
+
+    <div class="container">
+        <h1>Visualizador de Archivos (PDF, Word, Excel)</h1>
+
+        <div class="message">
+            ⚠️ **Nota importante:** Para Word y Excel, la URL debe apuntar a un archivo **público** y usaremos el visor de Google Docs (para compatibilidad). Para PDF, el navegador lo mostrará directamente.
+        </div>
+        
+        <div class="controls">
+            <input type="url" id="fileUrl" placeholder="Introduce la URL del archivo (ej: https://ejemplo.com/doc.pdf)">
+            <button id="viewButton">Visualizar</button>
+        </div>
+
+        <iframe id="viewer" title="Document Viewer" frameborder="0"></iframe>
+    </div>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

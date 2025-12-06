@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+}
+
+.layout {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.chat-window {
+    background: #fff;
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: auto;
+    height: 400px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.chat-input button {
+    padding: 8px 12px;
+}
+
+.user-item,
+.group-item {
+    cursor: pointer;
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-item:hover,
+.group-item:hover {
+    background: #f0f0f0;
+}
+
+.auth-box {
+    width: 320px;
+    margin: 80px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.error {
+    color: #a00;
+    margin-bottom: 8px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 8px;
+}
