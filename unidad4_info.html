@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 4 - Subir a la nube</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .info-page {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffffaa;
+            backdrop-filter: blur(6px);
+            border-radius: 15px;
+            box-shadow: 0 0 20px #00000033;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            color: #0055aa;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.7;
+        }
+
+        .cloud-box {
+            background: #e9f4ff;
+            border-left: 5px solid #0077ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #0077ff;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #005fcc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container info-page">
+
+    <div class="icon">☁️</div>
+    <h1>¿Qué significa subir un proyecto a la nube?</h1>
+
+    <div class="cloud-box">
+        <p>
+            Subir un proyecto a la nube significa guardar tus archivos en un servidor en Internet,  
+            permitiendo que cualquier persona pueda ver tu sitio desde cualquier dispositivo.
+        </p>
+    </div>
+
+    <h2>🌐 ¿Por qué se usa la nube?</h2>
+    <ul>
+        <li>Publicar páginas web accesibles desde cualquier parte del mundo.</li>
+        <li>No necesitas servidores propios ni configuraciones complicadas.</li>
+        <li>Es rápido, práctico y en muchos casos totalmente gratuito.</li>
+        <li>Permite trabajar en equipo y actualizar el sitio fácilmente.</li>
+    </ul>
+
+    <h2>📤 Ejemplo real: GitHub Pages</h2>
+    <div class="cloud-box">
+        <p>
+            GitHub Pages es un servicio gratuito que te permite publicar sitios web estáticos en segundos.  
+            Solo necesitas tus archivos <b>HTML</b>, <b>CSS</b>, <b>JS</b> y una cuenta de GitHub.
+        </p>
+    </div>
+
+    <h2>🚀 ¿Cómo funciona GitHub Pages?</h2>
+    <ol>
+        <li>Creas un repositorio en GitHub.</li>
+        <li>Subes tus archivos del proyecto.</li>
+        <li>Vas a <b>Settings → Pages</b>.</li>
+        <li>Activas GitHub Pages con la rama <b>main</b>.</li>
+        <li>GitHub genera un link público para tu sitio.</li>
+    </ol>
+
+    <h2>🧠 Beneficios</h2>
+    <ul>
+        <li>No necesitas servidores ni configuraciones complicadas.</li>
+        <li>Tu página se actualiza automáticamente cada vez que subes un cambio.</li>
+        <li>Funciona perfecto para portafolios, prácticas, proyectos escolares y más.</li>
+    </ul>
+
+    <a href="index.html" class="btn">⬅ Volver al menú</a>
+</div>
+
+</body>
+</html>
