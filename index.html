@@ -3,65 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Escolar</title>
+    <title>Mi Blog Académico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>📚 Mi Portafolio Académico</h1>
+            <p>Aprendizajes del Cuatrimestre</p>
+        </header>
 
-    <!-- NAV -->
-    <nav>
-        <button onclick="showSection('unidad1')" class="active">Unidad 1</button>
-        <button onclick="showSection('unidad2')">Unidad 2</button>
-        <button onclick="showSection('unidad3')">Unidad 3</button>
-        <button onclick="showSection('unidad4')">Unidad 4</button>
-    </nav>
+        <nav>
+            <button onclick="showSection('inicio')" class="active">🏠 Inicio</button>
+            <button onclick="showSection('sobre-mi')">👤 Sobre Mí</button>
+            <button onclick="showSection('unidades')">📖 Unidades</button>
+            <button onclick="showSection('contacto')">📧 Contacto</button>
+        </nav>
 
-    <!-- SECCIÓN UNIDAD 1 -->
-    <section id="unidad1" class="section active">
-        <div class="unit-card">
-            <h2>Unidad 1: Fundamentos de HTML y CSS</h2>
-            <p>En esta unidad desarrollé proyectos aplicando conceptos básicos de estructura, estilos y diseño responsive.</p>
-            <button onclick="openUnit(1)">Ver proyectos</button>
+        <div class="content">
+            <div id="inicio" class="section active">
+                <h2>¡Bienvenido a mi Blog Académico!</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-top: 1rem;">
+                    Este espacio documenta mi trayectoria académica durante el cuatrimestre. Aquí encontrarás información sobre mí, 
+                    los temas más importantes que estudié, y proyectos desarrollados en cada unidad.
+                </p>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-radius: 10px;">
+                    <h3>🎯 Objetivos del Portafolio</h3>
+                    <ul style="margin-top: 1rem; line-height: 2; color: #666;">
+                        <li>Documentar mi proceso de aprendizaje</li>
+                        <li>Mostrar los proyectos y trabajos realizados</li>
+                        <li>Compartir conocimientos adquiridos</li>
+                        <li>Facilitar el contacto profesional</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="sobre-mi" class="section">
+                <h2>Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="profile-card">
+                        <h3>👨‍🎓 Perfil Académico</h3>
+                        <p><strong>Nombre:</strong> [Tu Nombre Completo]</p>
+                        <p><strong>Carrera:</strong> [Tu Carrera]</p>
+                        <p><strong>Institución:</strong> [Tu Universidad/Escuela]</p>
+                        <p><strong>Semestre:</strong> [Número de Semestre]</p>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3>💡 Sobre Mi Experiencia</h3>
+                        <p style="color: #666; line-height: 1.8;">
+                            Estudiante apasionado por el desarrollo web y el diseño. Durante este cuatrimestre he 
+                            desarrollado habilidades en HTML, CSS y creación de sitios web responsive. Me interesa 
+                            especialmente el diseño de interfaces atractivas y funcionales, y busco aplicar estos conocimientos 
+                            en proyectos innovadores.
+                        </p>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3>🎯 Habilidades Desarrolladas</h3>
+                        <ul style="color: #666; line-height: 2; margin-top: 1rem;">
+                            <li>Desarrollo Web con HTML y CSS</li>
+                            <li>Diseño Responsive</li>
+                            <li>Maquetación y estructura de páginas</li>
+                            <li>Trabajo con navegación y formularios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="unidades" class="section">
+                <h2>Unidades del Cuatrimestre</h2>
+                <p style="color: #666; margin-bottom: 1rem;">
+                    Haz clic en cualquier unidad para ver el contenido y acceder a las páginas web correspondientes.
+                </p>
+                
+                <div class="units-grid">
+                    <div class="unit-card">
+                        <h3>📌 Unidad 1: Fundamentos de HTML y CSS</h3>
+                        <p>Desarrollo de páginas web aplicando conceptos básicos de estructura HTML y estilos CSS.</p>
+                        <button onclick="openUnit(1)">Ver Proyectos →</button>
+                    </div>
+
+                    <div class="unit-card">
+                        <h3>🔧 Unidad 2: Desarrollo Avanzado</h3>
+                        <p>Aplicación de técnicas avanzadas y mejores prácticas en desarrollo web.</p>
+                        <button onclick="openUnit(2)">Ver Proyectos →</button>
+                    </div>
+
+                    <div class="unit-card">
+                        <h3>🎨 Unidad 3: Proyecto Integrador</h3>
+                        <p>Desarrollo de un proyecto que integra todos los conocimientos adquiridos.</p>
+                        <button onclick="openUnit(3)">Ver Proyectos →</button>
+                    </div>
+
+                    <div class="unit-card">
+                        <h3>🚀 Unidad 4: Implementación Final</h3>
+                        <p>Implementación y presentación de resultados del proyecto final.</p>
+                        <button onclick="openUnit(4)">Ver Proyectos →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacto" class="section">
+                <h2>Contacto</h2>
+                <p style="color: #666; margin-bottom: 2rem;">
+                    ¿Tienes alguna pregunta o quieres colaborar en algún proyecto? ¡No dudes en contactarme!
+                </p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📧 Email:</strong>
+                        <span>tu.email@ejemplo.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📱 Teléfono:</strong>
+                        <span>+52 123 456 7890</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>🔗 LinkedIn:</strong>
+                        <span>linkedin.com/in/tu-perfil</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>💻 GitHub:</strong>
+                        <span>github.com/tu-usuario</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📍 Ubicación:</strong>
+                        <span>Ciudad Victoria, Tamaulipas, México</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-radius: 10px;">
+                    <h3>💬 Envíame un Mensaje</h3>
+                    <p style="color: #666; margin-top: 0.5rem;">
+                        Estoy abierto a oportunidades de colaboración, prácticas profesionales y proyectos interesantes. 
+                        No dudes en contactarme para cualquier consulta.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- SECCIÓN UNIDAD 2 -->
-    <section id="unidad2" class="section">
-        <div class="unit-card">
-            <h2>Unidad 2: Desarrollo Avanzado</h2>
-            <p>Aplicación de técnicas avanzadas de CSS, efectos dinámicos y lógica interactiva.</p>
-            <button onclick="openUnit(2)">Ver proyectos</button>
-        </div>
-    </section>
+        <footer>
+            <p>&copy; 2024 - Mi Portafolio Académico | Todos los derechos reservados</p>
+        </footer>
+    </div>
 
-    <!-- SECCIÓN UNIDAD 3 -->
-    <section id="unidad3" class="section">
-        <div class="unit-card">
-            <h2>Unidad 3: Proyecto Integrador</h2>
-            <p>Proyecto integrador que mezcla HTML, CSS, JavaScript y elementos dinámicos.</p>
-            <button onclick="openUnit(3)">Ver proyectos</button>
-        </div>
-    </section>
-
-    <!-- SECCIÓN UNIDAD 4 -->
-    <section id="unidad4" class="section">
-        <div class="unit-card">
-            <h2>Unidad 4: Implementación Final</h2>
-            <p>Entrega final del proyecto con documentación completa y presentación visual.</p>
-            <button onclick="openUnit(4)">Ver proyectos</button>
-        </div>
-    </section>
-
-    <!-- MODAL -->
-    <div id="modal">
+    <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <button class="close-modal" onclick="closeModal()">×</button>
             <div id="modal-body"></div>
         </div>
     </div>
 
-    <!-- JS -->
     <script src="script.js"></script>
-
 </body>
 </html>
