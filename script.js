@@ -80,11 +80,17 @@ const unitContent = {
         ]
     },
 
-    4: {
-        title: 'Unidad 4: Implementación Final',
-        description: 'Implementación y presentación de resultados del proyecto final con documentación completa.',
-        projects: []
-    }
+4: {
+    title: 'Unidad 4: Publicación de Proyectos en la Nube',
+    description: 'En esta unidad aprendí a subir proyectos web a la nube utilizando GitHub Pages, así como la estructura correcta de un sitio estático.',
+    projects: [
+        {
+            name: '☁️ ¿Qué es subir un proyecto a la nube?',
+            description: 'Explicación clara sobre qué significa alojar un sitio web en la nube.',
+            path: 'unidad4_info.html'
+        }
+    ]
+}
 };
 
 
@@ -135,3 +141,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
